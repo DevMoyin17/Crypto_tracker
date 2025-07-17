@@ -51,7 +51,6 @@
       />
     </div>
 
-    <!-- No result -->
     <p v-else class="text-gray-500 text-center text-lg">
       No cryptocurrencies found matching your criteria.
     </p>
@@ -61,7 +60,7 @@
 <script setup>
 import { onMounted, ref, computed, watch } from 'vue';
 import { getTopCoins } from '@/services/api.js';
-import CoinCard from '@/components/CoinCard.vue';
+ import CoinCard from '@/components/CoinCard.vue';
 import SearchBar from '@/components/SearchBar.vue';
 import CurrencyPicker from '@/components/CurrencyPicker.vue';
 import SkeletonCard from '@/components/SkeletonCard.vue';

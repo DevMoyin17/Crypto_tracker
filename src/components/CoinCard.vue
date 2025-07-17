@@ -2,7 +2,6 @@
   <router-link :to="`/coin/${coin.id}`">
     <div class="relative border border-gray-200 dark:border-gray-700 rounded-lg p-4 cursor-pointer hover:shadow-md transition">
       
-      <!-- Rank Badge Positioned Absolutely -->
       <span class="absolute top-3 right-2 text-sm bg-gray-700 text-white px-2 py-1 rounded-full shadow">
         Rank #{{ coin.market_cap_rank }}
       </span>
@@ -15,7 +14,6 @@
         </div>
       </div>
 
-      <!-- Price and change -->
       <div class="space-y-1">
         <p class="text-base font-semibold text-gray-900 dark:text-gray-100">
             {{ formatCurrency(coin.current_price, currency) }}
